@@ -1,0 +1,107 @@
+.area{
+    width: 400px;
+    height: 420px;
+    position: absolute;
+    background-color: rgb(223, 208, 211);
+    top: 45%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -170px;
+}
+
+.formu{
+    padding: 15px;
+}
+
+.campo-text{
+    width: 225px;
+}
+
+.campo-msg{
+    position: absolute;
+    left: 133px;
+    margin-top: 0px;
+    width: 225px;
+}
+.campo-select{
+    position: relative;
+    width: 233px;
+    left: 83px;
+}
+#botao{
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+h4{
+    position: relative;
+    text-align: center;
+}
+.main{
+    width: 1800px;
+    height: 1800px;
+}
+
+
+
+#container-tabela{
+    position: absolute;
+    width: 650px;
+    top: 30%;
+    left: 23%;
+    
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+td{
+    text-align: center;
+}
+th{
+background-color: rgb(63,81,181);
+
+}
+table tr:nth-child(odd){
+background-color: white;
+
+}
+
+table tr:nth-child(even){
+background-color: rgb(223, 208, 211);
+}
+
+
+table tr:nth-child(odd):hover{
+background-color: gray;
+
+}
+
+table tr:nth-child(even):hover{
+    background-color: rgb(112, 100, 103);
+    }
+
+
+    #botao{
+        width: 180px;
+        height: 80px;
+        position: relative;
+        left: -8%;
+    }
+
+    #enviar{
+        width: 70px;
+    }
+ #enviar:hover{
+        width: 90px;
+        height: 30px;
+    }
+    #enviar:active{
+        position: relative;
+        top: -2px;
+    }

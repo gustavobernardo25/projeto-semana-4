@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Loja do seu Juca</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="index.html">Cadastro</a>
+                    <a class="mdl-navigation__link" href="consulta.html">Consulta</a>
+
+                </nav>
+            </div>
+        </header>
+
+
+
+        <!--Main-->
+
+
+
+        <div class="area">
+            <h4>Cadastre um novo produto</h4>
+            <form class="formulario">
+                <fieldset>
+
+                    <div class="formu">
+                        <label for="campo-produto">Nome do Produto:
+                            <input type="text" id="name" class="campo-text">
+
+                        </label>
+                    </div>
+
+                    <div class="formu">
+                        <label for="campo-select"> Tipo:
+                            <select name="Tipo" class="campo-select" id="selec">
+                                <option value=""></option>
+                                <option value="">Smartphone</option>
+                                <option value="">Computadores</option>
+                                <option value="">Periférico</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="formu">
+                        <label for="campo-text">Número de Série:
+                            <input type="text" id="numserie" class="campo-text" maxlength="7" onkeyup="mascaraSerie()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        </label>
+                    </div>
+
+                    <div class="formu">
+                        <label for="campo-msg">Características:
+                            <textarea name="Caracteristicas" id="carac" class="campo-msg" cols="35" rows="8"></textarea>
+                        </label>
+                    </div>
+
+
+                    <div id="botao" class="formu">
+                        <button id="enviar" onclick="salvar()">Enviar</button>
+                    </div>
+
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
